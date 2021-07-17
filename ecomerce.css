@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  background: #1a1a1a;
+}
+
+header {
+  margin: 10px 20px;
+  -webkit-box-shadow: 0px 0px 4px #222222;
+          box-shadow: 0px 0px 4px #222222;
+  background: #242424;
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+}
+
+header .navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navbar .search-container {
+  margin: 0 0 0 200px;
+}
+
+header .navbar .search-container .search {
+  font: 100 15px 'Rajdhani', sans-serif;
+  color: red;
+  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
+  -webkit-filter: contrast(1);
+          filter: contrast(1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid red;
+  background: none;
+  text-align: center;
+}
+
+header .navbar .links .listdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navbar .links .list {
+  margin: 0 0 0 2rem;
+  list-style-type: none;
+}
+
+header .navbar .links .list .link {
+  text-decoration: none;
+  color: red;
+  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
+}
+
+header .navbar .logo, header .navbar .link {
+  font: 100 22px 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+}
+
+main .shop-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20%;
+}
+
+main .shop-main .container-width {
+  max-width: 55rem;
+}
+
+main .shop-main .box-link {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+main .shop-main .container {
+  padding: 0 5px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 5px;
+          box-shadow: 0px 0px 5px;
+  background: white;
+  margin: 30px 0;
+}
+
+main .shop-main .container .photoo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 300px;
+  height: 300px;
+}
+
+main .shop-main .container .img-teres {
+  height: 300px;
+  border-radius: 20px 0 0 20px;
+}
+
+main .shop-main .img-title {
+  text-align: center;
+  font: 100 30px 'Rajdhani', sans-serif;
+  margin: 20px;
+}
+
+main .shop-main .description {
+  margin: 9% 0;
+  text-align: center;
+  font: 100 20px 'Rajdhani', sans-serif;
+  list-style: none;
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+}
+
+footer .footer-title {
+  font: 100 50px 'Rajdhani', sans-serif;
+  color: white;
+  text-shadow: 0px 0px 5px #550000, 0px 0px 5px #550000;
+}
+
+footer .footer-title span {
+  color: red;
+}
+
+footer .linksdiv {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+footer .linksdiv .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% / 3);
+}
+
+footer .linksdiv .footer-links li {
+  margin: 4rem 0 0 0;
+  list-style: none;
+  font: 100 20px 'Rajdhani', sans-serif;
+  color: white;
+}
+
+footer .linksdiv .footer-links li .footer-a {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+footer .linksdiv .footer-links li .footer-a .icon-footer {
+  margin: 0 8px 5px 0;
+}
+/*# sourceMappingURL=ecomerce.css.map */
