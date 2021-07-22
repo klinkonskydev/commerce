@@ -5,13 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./building.css">
-    <title>Building</title>
+    <title>COMPRAR | MAIN</title>
 </head>
 <body>
+    
+    <section class="modal-section" id="modal">
 
+        <div class="modal">
+            
+            <div class="modal-header">
+                <img src="https://image.flaticon.com/icons/png/512/463/463612.png"
+                 alt="" width="25" height="25" class="modal-logo" onclick="Modal.toggleShop()">
+                
+                <div class="modal-main">
+                    
+                    <img 
+                    src="https://images.tcdn.com.br/img/img_prod/961638/categoria_img_61_20210331201826.png" 
+                    alt="img"
+                    width="50px"
+                    height="50px"
+                    >
+
+                    <p class="modal-description">Copo de Plástico para Tererê com Bomba</p>
+                    
+                    
+                    <div class="add-remove">
+                        <button onclick="Modal.decreaseModal()" 
+                        id="remove-item"
+                        >-</button>
+                        <p id="modal-items">0</p>
+                        <button onclick="Modal.addModal()">+</button>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+            
+            
+            <div class="modal-footer">
+    
+                <div class="footer-arg">
+    
+                    <div>
+                        <p class="footer-text">TOTAL: </p>
+                    </div>
+    
+                    <div class="money">
+                        <p class="footer-money">$</p>
+                        <p class="footer-text" id="modal-price">9,20</p>
+                    </div>
+
+                    <div>
+                        <button class="build-btn">COMPRAR</button>
+                    </div>
+                    
+                </div>
+    
+            </div>
+        </div>
+        
+        
+    </section>
+        
     <header>
         <div>
-            <a href="#" class="card">
+            <a href="#" class="card" id="car" onclick="Modal.toggleShop()">
                 <img src="../../svg/teres/carrinho-de-compras.png" alt="" width="25" height="25">
                 <div class="number">
                     <p id="number">0</p>
@@ -21,8 +80,6 @@
     </header>
 
     <main>
-
-        <div class="background-ball"></div>
 
         <div class="title-and-description">
             <h1 class="title">Copo de Plástico para Tererê com Bomba</h1>
@@ -62,8 +119,8 @@
                     <img 
                     src="https://images.tcdn.com.br/img/img_prod/961638/categoria_img_61_20210331201826.png" 
                     alt="img"
-                    width="300px"
-                    height="300px"
+                    width="400px"
+                    height="400px"
                     >
                 </div>
                 
@@ -82,11 +139,11 @@
     <footer>
 
         <div class="pricediv">
-            <p class="price">R$ 9,20</p>
+            <p class="price" id="price">R$ 9,20</p>
         </div>
 
-        <button class="btn-card" id="btn-card" onclick="add.card()">
-            add to card
+        <button class="btn-card" id="btn-card" onclick="Modal.counteradd()">
+            ADICIONAR AO CARRINHO
             <span>
                 <img src="../../svg/teres/carrinho-de-compras.png" alt="" width="20" height="20">
             </span>
@@ -94,7 +151,7 @@
 
     </footer>
 
-    <script src="./building.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 </html>

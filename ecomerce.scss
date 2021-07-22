@@ -9,67 +9,72 @@
 html, body {
     width: 100%;
     height: 100%;
+
     scroll-behavior: smooth;
-    
-    background: rgb(26, 26, 26);
+
+
 }
 
 header{
-    margin: 10px 20px;
-    box-shadow: 0px 0px 4px rgb(34, 34, 34);
-    background: rgb(36, 36, 36);
-    padding: 20px 40px;
-    
-    display: flex;
-    align-items: center;
-    border-radius: 30px;
 
     .navbar{
-        width: 100%;
+        padding: 20px;
 
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
 
         .search-container{
-            margin: 0 0 0 200px;
+            margin: 0 0 0 300px;
 
-            .search
+            .search-div
             {
-                font: 100 15px 'Rajdhani', sans-serif;
-                color: red;
-                text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
-                filter: contrast(1);
-    
-                box-sizing: border-box;
-                outline: none;
-    
-                border: none;
-                border-bottom: 1px solid red;
-    
-                background: none;
-    
-                text-align: center;
+                padding: 0 0 8px;
+                border-bottom: 3px double red;
 
+                .search
+                {
+                    font: 100 15px 'Rajdhani', sans-serif;
+                    
+                    box-sizing: border-box;
+                    
+                    outline: none;
+                    border: none;
+                    
+                    background: none;
+                    
+                    text-align: center;
+                }
             }
         }
         
     
         .links{
+
             .listdiv{
-                display: flex
-            }
-    
-            .list{
-                margin: 0 0 0 2rem;
-                list-style-type: none;
-    
-                .link{
-                    text-decoration: none;
-                    color: rgb(255, 0, 0);
-                    text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
+                display: flex;
+                
+                .list{
+                    padding: 0 0 0 2rem;
+                    list-style-type: none;
+                    
+                    .link{
+                        text-decoration: none;
+                    }
+
+                    
                 }
+                .list:first-child{
+                    .link
+                    {
+                        color: red;
+
+                        border-bottom: 3px double red ;
+                    }
+                }
+
             }
-    
+            
         }
     
         .logo, .link{
@@ -87,6 +92,7 @@ main{
 
         padding: 0 20%;
         
+        background: none;
 
         .container-width
         {
@@ -147,17 +153,16 @@ main{
 }
 
 footer{
-    
-    padding: 15px;
-
     text-align: center;
 
-    .footer-title{
-        font:100 50px 'Rajdhani', sans-serif;
-        color: rgb(255, 255, 255);
+    background: none;
 
-        text-shadow: 0px 0px 5px rgb(85, 0, 0),
-        0px 0px 5px rgb(85, 0, 0);
+    .footer-title{
+        font:100 45px 'Rajdhani', sans-serif;
+
+        text-align: center;
+
+        text-shadow: 0px 0px 5px rgb(85, 0, 0);
 
         span{
             color: red;
@@ -166,9 +171,8 @@ footer{
     }
 
     .linksdiv{
-
-        display: grid;
-        place-items: center;
+        display: flex;
+        justify-content: center;
         
         .footer-links{
             display: flex;
@@ -178,20 +182,20 @@ footer{
             width: calc(100% / 3);
 
             li{
-                margin: 4rem 0 0 0;
+                padding: 2rem 0 0 0;
 
                 list-style: none;
 
                 font: 100 20px 'Rajdhani', sans-serif;
-                color: white;
+                color: black;
 
                 .footer-a{
-                    color: white;
+                    color: black;
                     display: flex;
                     align-items: center;
                     
                     text-decoration: none;
-                    border-bottom: 1px solid white;
+                    border-bottom: 3px double rgb(255, 0, 0);
 
                     .icon-footer{
                         margin: 0 8px 5px 0;
